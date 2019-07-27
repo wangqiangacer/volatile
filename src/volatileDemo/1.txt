@@ -1,0 +1,30 @@
+Compiled from "MyData.java"
+public class volatileDemo.MyData {
+  volatile int number;
+
+  public volatileDemo.MyData();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: iconst_0
+       6: putfield      #2                  // Field number:I
+       9: return
+
+  public void addTo60();
+    Code:
+       0: aload_0
+       1: bipush        60
+       3: putfield      #2                  // Field number:I
+       6: return
+
+  public synchronized void addPlusPlus();
+    Code:
+       0: aload_0
+       1: dup
+       2: getfield      #2                  // Field number:I
+       5: iconst_1
+       6: iadd
+       7: putfield      #2                  // Field number:I
+      10: return
+}
