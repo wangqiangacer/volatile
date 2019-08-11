@@ -1,5 +1,10 @@
 package GC;
 
+
+/**
+ *  -XX:+UseParallelGC 使用并行回收器
+ *  -XX:+UseSerial  使用串行并行回收
+ */
 public class HelloGC {
     public static void main(String[] args) {
 //        System.out.println("hello GC");
@@ -15,7 +20,7 @@ public class HelloGC {
 //        System.out.println("MAXMEMORY(-Xmx):"+maxMemory+"字节，"+(maxMemory/(double)1024/1024)+"MB");
 
 
-        Byte[] bytes=new Byte[50*1024*1024];
+        //Byte[] bytes=new Byte[50*1024*1024];
 
     }
 }

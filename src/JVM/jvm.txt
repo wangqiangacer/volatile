@@ -4,3 +4,6 @@
 4.-Xmn:设置年轻代的大小
 5.-XX:MetaspaceSize:设置元空间的大小默认是20多M
 6.-XX:+PrintGCDetails:输出GC 的详细收集信息
+7.-XX:SurvivorRatio:调整新生代的比例：eden和from和to三个之间的比例默认是8:1:1
+8.-XX:NewRatio:设置新声代和老年代的比例
+9.-XX:MaxTenuringThreshold=15  设置从新生代到老年代 设置垃圾的最大年龄 不能超过15  只能是0-15  降低fullGc的概率
